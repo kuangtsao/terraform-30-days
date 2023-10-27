@@ -42,3 +42,7 @@ $ export TF_LOG=trace
  token 遮起來，不然就可以拿來挖礦了 XD
 
 解決方法：將 provider 的 azurerm version 調高，可以不用到最新的， 只要讓 `terraform plan` 不會卡太久就行了。
+
+刪除與教學上的不同點：
+需要將 `main.tf` 和 `output.tf` 中有關 container 和 account 的區塊都註解掉
+如 commit 6f92b06
